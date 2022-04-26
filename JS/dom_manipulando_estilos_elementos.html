@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script>
+        function modificaEstilo(corDeFundo){
+            document.getElementById('resultado').style.backgroundColor = corDeFundo
+            console.log(corDeFundo)
+        }
+
+        function modificaClasse() {
+            document.getElementById('quadrado').className = 'quadrado2'
+        }
+	</script>
+</head>
+
+<body>
+    <h3>Manipulando estilos</h3>
+	<div class="botoes">
+		<button type="button" onclick="modificaEstilo('#FF0000')">Vermelho</button>
+		<button type="button" onclick="modificaEstilo('#00FF00')">Verde</button>
+		<button type="button" onclick="modificaEstilo('#0000FF')">Azul</button>
+
+        <div id="resultado">
+
+        </div>
+
+	
+	</div>
+
+    <h3>Manipulando Classes</h3>
+	<div class="botoes">
+		<button type="button" onclick="modificaClasse()">Aplicar Classe</button>
+		
+        <div class="quadrado" id="quadrado">
+
+        </div>
+
+	
+	</div>
+
+</body>
+
+</html>

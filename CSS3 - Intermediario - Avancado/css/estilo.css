@@ -1,0 +1,379 @@
+/*
+***************************
+/* Seletor Universal 
+
+* {
+	border: 1px solid red;
+}
+
+/* Seletor de testo 
+h1 {
+	border: 0px;
+	color: blue;
+}
+
+/* Seletor de classe 
+
+.verde {
+	color: green;
+}
+
+p.verde{
+	color: green;
+	border: green 5px solid;
+}
+/* Seletor de filho 
+li>a {
+	color: red;
+	text-decoration: none;
+}
+
+/* Seletor de descendente 
+div a{
+	color: blue;
+	text-decoration: none;
+}
+
+/* Seletor de irmão adjacente, seleciona o irmão proxímo do outro 
+h1+p{
+	color: red;
+
+}
+
+/* Seletor de irmão geral 
+h2~p{
+	color: blue;
+
+}
+
+*/
+
+
+/**********************************
+Herança e especificidade */
+
+/* Seletores iguais, excessão important
+
+#pagina p {
+	color: red !important;
+}
+
+#pagina p {
+	color: blue;
+}
+
+
+ Se um seletor for mais específico que o outro a regra específica será aplicada 
+(terá precedência sobre regras mais gerais) Ex: "ID 1º , CLASS : 2º, ITEM: 3º;
+
+* {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+p.verde {
+	color: green;
+}
+
+p#amarelo {
+	color: yellow;
+}
+
+***************************
+BARRA DE NAVEGAÇÃO VERTICAL
+
+
+
+ul {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+li{
+	padding: 5px 20px;
+	
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a {
+	
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background:  #f7b600 url(../imagens/menu.png) no-repeat;
+}
+
+a:hover {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#home #navegacao_lateral .home a,
+#sobre #navegacao_lateral .sobre a,
+#servicos #navegacao_lateral .servicos a,
+#noticias #navegacao_lateral .noticias a,
+#contato #navegacao_lateral .contato a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+
+}
+
+***************************
+BARRA DE NAVEGAÇÃO HORIZONTAL
+
+
+ul#navegacao {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159db0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+
+}
+
+ul#navegacao li {
+	float: left;
+}
+
+ul#navegacao a{
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) repeat-y;
+}
+
+ul#navegacao .primeiro a{
+	background: none;
+}
+
+ul#navegacao a:hover{
+		color: #085662;
+		background-color: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+		color: #085662;
+		background-color: #44cade;
+
+}
+
+***************************
+BARRA DE NAVEGAÇÃO COM ABAS
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+ul li {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+		color: #fff;
+}
+
+ul a:hover{
+	color: #894a1f;
+}
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+***************************
+LAYOUT FIXO
+
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	border: 2px solid red;
+	position: relative;
+	background: #fff url(../imagens/coluna.png) repeat-y left top;
+	width: 960px;
+	margin: 0px auto;
+	min-width: 820px;
+	max-width: 1200px;
+	max-height: ;
+	min-height: ; 
+}
+
+#marca {
+	width: 100%;
+	height: 300px;
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 300px;
+}
+
+#conteudo {
+	
+	width: 70%;
+	float: right;
+
+}
+
+#imagem {
+	width: 90%;
+	overflow: hidden;
+}
+#conteudo-principal {
+
+	width: 60% ;
+	float: left;
+}
+
+img.img-noticia {
+
+	width: 96%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#conteudo-secundario {
+	
+	width: 36% ;
+	float: right;
+	background: #d1d1d1;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#navegacao {
+	
+	width: 24,3% ;
+	float: left;
+}
+
+#rodape{
+
+clear: both;
+background: #c4c4c4;
+padding: 5px;
+
+}
+
+ul#navegacao-esquerda {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+ul#navegacao-esquerda li{
+	
+	
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+
+
+ul#navegacao-esquerda {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul#navegacao-esquerda a {
+	
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background:  #f7b600 url(../imagens/menu.png) no-repeat;
+}
+
+ul#navegacao-esquerda a:hover {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+#home #navegacao_lateral .home a,
+#sobre #navegacao_lateral .sobre a,
+#servicos #navegacao_lateral .servicos a,
+#noticias #navegacao_lateral .noticias a,
+#contato #navegacao_lateral .contato a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+
+}
+
+ARREDONDAMENTO
+*/
+
+.caixa {
+	width: 400px;
+	background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y bottom;
+	}
+.caixa h2 {
+	background: url(../imagens/topo2.png) no-repeat left top;
+	padding: 10px 20px 0 20px;
+	margin: 0px;
+}
+
+.caixa p{
+	padding-left: 20px;	
+	margin-bottom: 0px;	
+	
+}
+	.caixa .ultimo {
+		background: url(../imagens/baixo2.png) no-repeat left bottom;
+		width:400px;
+		height: 24px;
+	}
+

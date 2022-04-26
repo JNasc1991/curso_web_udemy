@@ -1,0 +1,35 @@
+.caracteres input, p {
+	display: block;
+}
+
+.botoes h3{
+	display: block;
+}
+
+botoes button{
+	width: 15px;
+}
+
+#resultado {
+	width: 100px;
+	height: 75px;
+	border: 1px solid black;
+	color: darksalmon;
+	margin-top: 10px;
+}
+
+.quadrado {
+	width: 100px;
+	height: 75px;
+	border: 1px solid black;
+	color: darksalmon;
+	margin-top: 10px;
+}
+
+.quadrado2 {
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+	color: blue;
+	margin-top: 10px;
+}

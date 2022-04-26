@@ -1,0 +1,87 @@
+/*Configurando fonte*/
+
+@font-face {
+	font-family: "Dragon Ball";
+	src: url("../fontes/Dragon-Ball.woff");
+}
+
+@font-face {
+	font-family: "Super Mario";
+	src: url("../fontes/SuperMario256.woff");
+}
+
+/*Configurando logo*/
+#logo {
+	width: 300px;
+	height: 160px;
+}
+
+#fundo_preto {
+	width: 195px;
+	height: 56px;
+	background-color: #000;
+	position: relative;
+	top: -102px;
+	left: 46px;
+}
+.super-mario {
+	font-family: "Super Mario";
+	-webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: #000;
+	text-shadow: -2px 7px 0px #000;
+}
+
+.super-mario span{
+	display: inline;
+	position: relative;
+
+}
+
+#super span{
+	font-size: 4.1em;
+	margin-left: 39px;
+	margin-right: -50px ;
+}
+
+#mario span{
+	font-size: 5em;
+	margin-right: -12px ;
+	top: -16px;
+}
+#m, #s {
+	z-index: 5;
+}
+#u, #a {
+	z-index: 4;	
+}
+
+#p, #r2 {
+	z-index: 3;	
+}
+
+#e, #i {
+	z-index: 2;	
+}
+
+#r, #o {
+	z-index: 1;	
+}
+
+#s, #i{
+	color: #019fde;
+}
+#u, #r, #r2 {
+	color: #ffd302;
+}
+
+#m, #p {
+	color: #e52811;
+}
+
+#e, #a, #o {
+	color: #46af37;
+}
+
+#m {
+	font-size: 5.8em;
+}

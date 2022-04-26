@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BOM JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script>
+
+        let janela
+
+		function abrirPopup() {
+            janela = window.open('http://www.google.com', '_blank', "width=1000, height=400, resizable=no, titlebar=no" )
+        }
+
+        function fecharPopup() {
+            janela.close();
+        }
+
+
+	</script>
+</head>
+
+<body>
+	<div class="caracteres">
+		<button onclick="abrirPopup()">Abrir Janela</button>
+        <button onclick="fecharPopup()">Fechar Janela</button>
+        <button onclick="window.print()">Imprimir</button>
+	</div>
+
+</body>
+
+</html>

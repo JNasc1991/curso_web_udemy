@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script>
+		const video = []
+		console.log(video)
+		video[0] = []
+		video[0]['nome'] = 'Dragon Ball Super'
+		video[0]['categoria'] = 'Anime'
+
+		function getVideo(video){
+		try {
+			console.log(video[1]['nome'])
+		} catch(erro){
+			console.log('Tratando erro: ' + erro)
+			throw new Error('Estamos trabalhando para sanar o erro!')
+		}
+		finally{
+			console.log('Finalizando')
+		}
+	}
+	getVideo(video)
+
+	</script>
+</head>
+
+<body>
+	<div class="caracteres">
+		
+	</div>
+
+</body>
+
+</html>
